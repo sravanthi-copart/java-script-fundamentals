@@ -1,0 +1,35 @@
+<html>
+<body>
+<script>
+ 
+  var student = {
+       id : 531,
+      name : "sravs",
+      display:function() {
+        document.write(this.id + " <br/>");
+        document.write(this.name + "<br/>");
+      }
+    };
+    student.display();
+    function printDetails() {
+      document.write(this.name + "<br/>");
+      document.write(this.id + " <br/>");
+    }
+    var student1 = {
+       id : 12,
+       name : "Bob"
+       
+    };
+    var student2 = {
+      id : 13,
+      name : "John"
+     
+    };
+      this.id = 3;
+      this.name = "mary";
+    printDetails.call(student1);
+    printDetails.call(student2);
+     printDetails.call();
+</script>
+</body>
+</html>

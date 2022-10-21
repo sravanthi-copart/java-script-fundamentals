@@ -1,0 +1,42 @@
+<html>
+<body>
+<script>
+ function helloworld(name) {
+  return "Hello JavaScript"
+
+ }
+ document.write(helloworld() + "<br/>");
+ function evenOrodd(number) {
+ 	if(number % 2 == 0) {
+ 		return "Even number";
+ 	} else {
+ 		return "Odd number";
+ 	}
+ }
+ 
+ 	document.write(evenOrodd(10) + "<br/>");
+ 	var evenOrodd2 = function(num){
+ 		if(num % 2 == 0) {
+ 			return "Even";
+ 		} else {
+ 			return "Odd";
+ 		}
+ 	}
+ 	document.write(evenOrodd2(11) + ">br/>");
+
+ 	function evenOrodd3(n) {
+ 		document.write(arguments[1] + "<br/>");
+ 		document.write(arguments.length+ "<br/>");
+ 		document.write(evenOrodd3.length + " <br/>");
+ 	if(n % 2 == 0) {
+ 		return "E";
+ 	} else {
+ 		return "O";
+ 	}
+
+ }
+document.write(evenOrodd3(11,30,40));
+ 
+</script>
+</body>
+</html>

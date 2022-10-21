@@ -1,0 +1,29 @@
+<html>
+<body>
+<script>
+    
+    function printDetails(score,score1) {
+      document.write(this.name + "<br/>");
+      document.write(this.id + " <br/>");
+      document.write(score + "<br/>");
+      document.write(score1 + "<br/>");
+    }
+    var student1 = {
+       id : 12,
+       name : "Bob"
+       
+    };
+    var student2 = {
+      id : 13,
+      name : "John"
+     
+    };
+      this.id = 3;
+      this.name = "mary";
+    printDetails.apply(student1,[18,40]);
+    printDetails.apply(student2,[10]);
+     printDetails.apply(this,[2]);
+    
+</script>
+</body>
+</html>
