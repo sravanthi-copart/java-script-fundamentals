@@ -1,0 +1,17 @@
+<html>
+<body>
+<script>
+	var studentname = ["A","B"];
+	document.write(studentname[0] + "<br/>");
+	var student = new Array("aa","bb");
+	document.write(student[1]+ "<br/>");
+	document.write((student instanceof Array) + "<br/>");
+	document.write((studentname instanceof Object) + "<br/>");
+
+var myFunc = new Function("name","return 'hello'+name");
+
+document.write((myFunc instanceof Function)+"<br/>");
+
+</script>
+</body>
+</html>
